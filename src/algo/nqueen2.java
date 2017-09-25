@@ -11,7 +11,7 @@ public class nqueen2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		nqueen2 as = new nqueen2();
-		as.solveNQueens(10);
+		as.solveNQueens(9);
 
 	}
 	
@@ -45,9 +45,9 @@ public class nqueen2 {
 	            strtotal.append(item[i]);
 	            //strtotal.toString()
 	        }  
-	        if(!map.containsKey(strtotal.toString())){
+	        if(!map.containsKey(Arrays.toString(item))){
 	        	//map.put(item[0], "1");
-	        	map.put(strtotal.toString(), "1");
+	        	map.put(Arrays.toString(item), "1");
 	        }
 	        System.out.println(Arrays.toString(item));
 	        res.add(item);  
